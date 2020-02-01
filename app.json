@@ -8,6 +8,9 @@
   "buildpacks": [
      {
       "url": "https://github.com/todokku/heroku-buildpack-tor-proxy"
+    },
+    {
+      "url": "heroku/python"
     }
   ]
 }
