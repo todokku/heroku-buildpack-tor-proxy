@@ -7,7 +7,7 @@
   "keywords": ["tor", "onion", "bridge"], 
   "buildpacks": [
      {
-      "url": "https://github.com/todokku/heroku-buildpack-tor-proxy"
+      "url": "https://github.com/iamashks/heroku-buildpack-tor-proxy/tree/master/bin"
     },
     {
       "url": "heroku/python"
