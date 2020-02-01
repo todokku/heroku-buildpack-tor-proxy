@@ -5,18 +5,12 @@
   "repository": "https://github.com/todokku/heroku-buildpack-tor-proxy",
   "logo": "https://raw.githubusercontent.com/todokku/heroku-buildpack-tor-proxy/master/images.jpg",
   "keywords": ["tor", "onion", "bridge"], 
-    "env": {
-    "RAILS_ENV": "production",
-    "COOKIE_SECRET": {
-            "description": "This gets generated",
-            "generator": "secret"
+  "buildpacks": [
+     {
+      "url": ""
     },
-    "SETUP_BY": {
-            "description": "Who initiated this setup",
-            "value": ""
+    {
+      "url": "heroku/python"
     }
-  },
-  "scripts": {
-    "postdeploy": "bundle exec rake db:migrate"
-  }
+  ]
 }
