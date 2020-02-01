@@ -5,12 +5,4 @@
   "repository": "https://github.com/todokku/heroku-buildpack-tor-proxy",
   "logo": "https://raw.githubusercontent.com/todokku/heroku-buildpack-tor-proxy/master/images.jpg",
   "keywords": ["tor", "onion", "bridge"], 
-  "buildpacks": [
-     {
-      "url": "https://github.com/iamashks/heroku-buildpack-tor-proxy/tree/master/bin"
-    },
-    {
-      "url": "heroku/python"
-    }
-  ]
 }
