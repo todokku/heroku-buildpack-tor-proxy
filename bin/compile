@@ -22,6 +22,7 @@ export_env_vars() {
       [[ -e "$e" ]] || break
       echo "$e" | grep -E "$whitelist_regex" | grep -qvE "$blacklist_regex" &&
       export "$e=$(cat $env_dir/$e)"
+      echo "$e=$(cat $env_dir/$e)"
       :
     done
   fi
