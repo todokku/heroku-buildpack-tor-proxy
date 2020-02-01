@@ -1,0 +1,13 @@
+{
+  "name": "Tor Proxy Buildpack for Heroku",
+  "description": "With this buildpack installed, Tor Proxy runs automatically on the port: 9050.",
+  "website": "https://github.com/todokku",
+  "repository": "https://github.com/todokku/heroku-buildpack-tor-proxy",
+  "logo": "https://raw.githubusercontent.com/todokku/heroku-buildpack-tor-proxy/master/images.jpg",
+  "keywords": ["tor", "onion", "bridge"], 
+  "buildpacks": [
+     {
+      "url": "https://github.com/todokku/heroku-buildpack-tor-proxy"
+    }
+  ]
+}
