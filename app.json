@@ -17,5 +17,10 @@
   },
   "engines": {
     "node": "10.x"
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/todokku/heroku-buildpack-tor-proxy"
+    }
+  ]
 }
