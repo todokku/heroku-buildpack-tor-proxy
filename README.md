@@ -4,6 +4,8 @@ This buildpack sets up a Tor Proxy for your app on Heroku.
 
 ## Setup
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 1] Create a Heroku app as normal with the usual buildpacks.
 
 2] Then, add this buildpack in your app (through the [Heroku CLI][2]):
