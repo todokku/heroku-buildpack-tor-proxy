@@ -5,14 +5,9 @@
   "repository": "https://github.com/todokku/heroku-buildpack-tor-proxy",
   "logo": "https://raw.githubusercontent.com/todokku/heroku-buildpack-tor-proxy/master/images.jpg",
   "keywords": ["tor", "onion", "bridge"],
-  "env": {
-    "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
-      "value": "5"
-    },
   "buildpacks": [
     {
-      "url": "heroku/python"
+      "url": "https://github.com/todokku/heroku-buildpack-tor-proxy.git"
     }
   ]
 }
