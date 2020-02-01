@@ -18,7 +18,7 @@ export_env_vars() {
   blacklist_regex=${3:-'^(PATH|GIT_DIR|CPATH|CPPATH|LD_PRELOAD|LIBRARY_PATH)$'}
 
   if [ -d "$env_dir" ]; then
-    for e in $env_dir; do
+    for e in "$env_dir"/*; do
       [[ -e "$e" ]] || break
       echo "$e" | grep -E "$whitelist_regex" | grep -qvE "$blacklist_regex" &&
       export "$e=$(cat $env_dir/$e)"
